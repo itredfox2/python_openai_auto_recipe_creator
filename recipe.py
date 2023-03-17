@@ -76,6 +76,7 @@ class RecipeGenerator:
 
     @staticmethod
     def generate(prompt):
+        
         response = openai.Completion.create(engine="text-davinci-003",
                                                     prompt=prompt,
                                                     max_tokens=256,
